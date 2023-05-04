@@ -1,0 +1,56 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page-specific styles */
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .details__ships {
+    width: 30%;
+    margin-bottom: 2em;
+  }
+
+  .haulers {
+    width: 30%;
+    margin-bottom: 2em;
+  }
+ 
+  .haulers h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid black;
+  }
+
+  .docks {
+    width: 30%;
+    margin-bottom: 2em;
+  }
+ 
+  .docks h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid black;
+  }
+
+  .details__ships h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid black;
+  }
+  
