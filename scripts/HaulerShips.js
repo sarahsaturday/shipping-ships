@@ -28,12 +28,22 @@ document.addEventListener("click", (clickEvent) => {
 });
 
 export const HaulersList = () => {
-  const haulers = getHaulers();
+  let haulers = getHaulers();
+
+  haulers = haulers.sort((a, b) => {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  });
 
   let haulersHTML = "<ul>";
 
   for (const hauler of haulers) {
-    const haulerHTML = `<li class="hauler" data-id="${hauler.id}">Hauler ${hauler.id}: ${hauler.name}</li>`;
+    const haulerHTML = `<li class="hauler" data-id="${hauler.id}">${hauler.name}</li>`;
     haulersHTML += haulerHTML;
   }
 
